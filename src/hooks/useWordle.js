@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const useWordle = (solution) => {
+export const useWordle = (answer) => {
   const [turn, setTurn] = useState(0);
   const [currentGuess, setCurrentGuess] = useState('');
   const [guesses, setGuesses] = useState([]);
@@ -8,7 +8,33 @@ export const useWordle = (solution) => {
   const [correct, setCorrect] = useState(false);
 
   const formatGuess = () => {
-    console.log("here", currentGuess)
+    let answerArr = [...answer];
+    // Word to letters and set to grey
+    let formattedGuess = [...currentGuess].map((letter) => {
+      return {
+        key: letter, 
+        color: 'grey'
+      }
+    })
+
+    
+    // Set letter to green if correct index spot
+    formattedGuess.forEach((letter, i) => {
+      if (answerArr[i] === letter.key) {
+        formattedGuess[i].color = 'green';
+        answerArr[i] = null;
+      }
+    });
+    
+    //Set letter to yellow if correct but wrong index spot
+    formattedGuess.forEach((letter, i) => {
+      if (answerArr.includes(letter.key) && letter.color !== 'green') {
+        formattedGuess[i].color = 'yellow';
+        answerArr[answerArr.indexOf(letter.key)] = null;
+      }
+    })
+
+    return formattedGuess
   }
 
   const addNewGuess = () => {
@@ -53,7 +79,8 @@ export const useWordle = (solution) => {
         console.log('Word already was guessed')
         return
       }
-      formatGuess()
+      const formatted = formatGuess()
+      console.log(formatted)
     }
 
   }

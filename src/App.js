@@ -3,21 +3,21 @@ import { useEffect } from "react";
 import Wordle from "./components/Wordle";
 
 function App() {
-  const [solutions, setSolutions] = useState(null);
+  const [answer, setAnswer] = useState(null);
 
   useEffect(() => {
     fetch(' http://localhost:3001/solutions')
       .then(res => res.json())
       .then(json => {
        // random int from 0 - 6 
-       const randomSolution = json[Math.floor(Math.random()*json.length)]
-       setSolutions(randomSolution.word)
+       const randomAnswer = json[Math.floor(Math.random()*json.length)]
+       setAnswer(randomAnswer.word)
       })
-  }, [setSolutions])
+  }, [setAnswer])
   return (
     <div className="App">
       <h1>Wordle</h1>
-      {solutions && <Wordle solutions={solutions}/>}
+      {answer && <Wordle answer={answer}/>}
     </div>
   );
 }
