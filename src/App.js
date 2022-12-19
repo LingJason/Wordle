@@ -6,7 +6,7 @@ function App() {
   const [answer, setAnswer] = useState(null);
 
   useEffect(() => {
-    fetch(' http://localhost:3001/solutions')
+    fetch(' http://localhost:3001/answer')
       .then(res => res.json())
       .then(json => {
        // random int from 0 - 6 
