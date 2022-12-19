@@ -1,11 +1,47 @@
 {
-  "solutions": [
+  "letters": [
+    {"key": "a"},
+    {"key": "b"},
+    {"key": "c"},
+    {"key": "d"},
+    {"key": "e"},
+    {"key": "f"},
+    {"key": "g"},
+    {"key": "h"},
+    {"key": "i"},
+    {"key": "j"},
+    {"key": "k"},
+    {"key": "l"},
+    {"key": "m"},
+    {"key": "n"},
+    {"key": "o"},
+    {"key": "p"},
+    {"key": "q"},
+    {"key": "r"},
+    {"key": "s"},
+    {"key": "t"},
+    {"key": "u"},
+    {"key": "v"},
+    {"key": "w"},
+    {"key": "x"},
+    {"key": "y"},
+    {"key": "z"}
+  ],
+  "answer": [
     {"id": 1, "word": "pizza"},
-    {"id": 2, "word": "human"},
+    {"id": 2, "word": "jason"},
     {"id": 3, "word": "water"},
     {"id": 4, "word": "spade"},
     {"id": 5, "word": "lemon"},
-    {"id": 6, "word": "train"},
-    {"id": 7, "word": "coins"}
+    {"id": 6, "word": "spoon"},
+    {"id": 7, "word": "forks"},
+    {"id": 8, "word": "pasta"},
+    {"id": 9, "word": "apple"},
+    {"id": 10, "word": "steak"},
+    {"id": 11, "word": "limes"},
+    {"id": 12, "word": "honey"},
+    {"id": 13, "word": "sauce"},
+    {"id": 14, "word": "cakes"}
+
   ]
 }
