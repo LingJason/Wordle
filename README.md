@@ -4,16 +4,16 @@ Wordle clone created with React that have all the same features that one would f
 ## Final Product
 
 ### Start of the Game
-![Overview of wordle]()
+![Overview of wordle](docs/homePage.png)
 
 ### Making a Guess
-![Making a guess]()
+![Making a guess](docs/game.png)
 
 ### Win
-![Win]()
+![Win](docs/winModal.png)
 
 ### Lost
-![Lost]()
+![Lost](docs/lostModal.png)
 
 
 
