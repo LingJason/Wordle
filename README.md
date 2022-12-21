@@ -1,6 +1,23 @@
 ## Wordle Food Edition
 Wordle clone created with React that have all the same features that one would find in the actual Wordle game but remember its a food edition!!
 
+## Final Product
+
+### Start of the Game
+![Overview of wordle]()
+
+### Making a Guess
+![Making a guess]()
+
+### Win
+![Win]()
+
+### Lost
+![Lost]()
+
+
+
+
 ## Running the application
 You need **TWO** terminal windows/tabs to run this.
 
